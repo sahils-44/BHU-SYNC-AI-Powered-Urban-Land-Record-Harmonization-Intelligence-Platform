@@ -1129,8 +1129,7 @@ into a unified parcel-centric intelligence platform.
 | Resource | Link |
 |---|---|
 | GitHub Repository | https://github.com/sahils-44/BHU-SYNC-AI-Powered-Urban-Land-Record-Harmonization-Intelligence-Platform |
-| YouTube Prototype Demo | Add your final YouTube link |
-| Live Prototype | Add deployment URL if available |
+| YouTube Prototype Demo | https://youtu.be/rpeMOIMkdyo |
 
 ---
 
