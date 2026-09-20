@@ -1,7 +1,19 @@
-💡 Proposed Solution
+# BHU-SYNC
+
+## AI-Powered Urban Land Record Harmonization & Intelligence Platform
+
+> **One Plot. One Truth. Multiple Sources, Intelligently Synced.**
+
+**Smart India Hackathon Prototype**  
+**Team: TechX Titan**
+
+---
+
+## 💡 Proposed Solution
 
 BHU-SYNC creates a parcel-centric intelligence layer over multiple sources.
 
+```text
 Multiple Source Datasets
         ↓
 Data Ingestion
@@ -30,14 +42,12 @@ Human Review Workflow
         ↓
 Audit Trail
 
-The original source information remains traceable instead of being silently overwritten.
-
 ⭐ Core Capabilities
 1. Multi-Source Data Platform
 
 BHU-SYNC provides a persistent data ingestion and versioning foundation.
 
-Supported source categories include:
+Supported source categories:
 
 Cadastral
 Municipal
@@ -50,7 +60,7 @@ Building Footprint
 Zoning
 Satellite
 
-Capabilities include:
+Capabilities:
 
 CSV ingestion
 XLSX ingestion
@@ -83,7 +93,7 @@ This provides a common parcel-centric view while preserving source-level informa
 
 The harmonization engine uses multiple signals to determine whether records correspond to the same parcel.
 
-Matching signals can include:
+Matching signals include:
 
 Exact parcel identifier
 Normalized parcel identifier
@@ -105,7 +115,7 @@ Evidence:
 • Area difference is within configured tolerance
 • Spatial overlap is high
 
-Possible classifications include:
+Possible classifications:
 
 MATCHED
 POTENTIAL_MATCH
@@ -128,7 +138,7 @@ Spatial overlap
 Invalid geometry
 Potential identity conflict
 
-Each conflict remains linked to its:
+Each conflict remains linked to:
 
 Parcel
 Source record
@@ -158,14 +168,12 @@ Building-footprint relationships
 Zoning relationships
 Bounding-box filtering
 Parcel Map Semantics
-🟢 GREEN
-Harmonized
 
-🟡 YELLOW
-Conflict / Review Required
+🟢 GREEN — Harmonized
 
-🔴 RED
-Low Harmonization Score
+🟡 YELLOW — Conflict / Review Required
+
+🔴 RED — Low Harmonization Score
 
 The visualization is derived from live analysis results rather than hardcoded parcel IDs.
 
@@ -209,7 +217,7 @@ It does not independently determine legal ownership, legally binding boundaries,
 
 BHU-SYNC preserves dataset and analysis history so changes can be identified over time.
 
-The system can detect changes such as:
+The system can detect:
 
 Owner-field changes
 Area changes
@@ -394,442 +402,32 @@ Structured data retrieval
 Tool-based retrieval
 Provider abstraction
 Evidence/provenance-aware responses
-🔄 End-to-End Data Flow
-                    SOURCE DATA
-                         │
-                         ▼
-                  DATA INGESTION
-                         │
-                         ▼
-               DATASET VERSIONING
-                         │
-                         ▼
-                  SOURCE RECORDS
-                         │
-                         ▼
-                NORMALIZATION
-                         │
-                         ▼
-              CANONICAL PARCEL
-                         │
-                         ▼
-             MULTI-SOURCE MATCHING
-                         │
-              ┌──────────┴──────────┐
-              ▼                     ▼
-         HARMONIZATION          CONFLICTS
-              │                     │
-              └──────────┬──────────┘
-                         ▼
-                    ADVANCED GIS
-                         │
-                         ▼
-                    AI COPILOT
-                         │
-                         ▼
-             TEMPORAL INTELLIGENCE
-                         │
-                         ▼
-                  HUMAN WORKFLOW
-                         │
-                         ▼
-                      AUDIT
-🔍 Example: Parcel Intelligence
 
-For a parcel such as:
+Then continue with the remaining sections from the version I gave you earlier: **End-to-End Data Flow → Example Parcel Intelligence → Security → Testing → Project Phases → SIH Demo → Repository Structure → Local Setup → Environment Variables → Database → Limitations → Documentation → YouTube → GitHub → Team TechX Titan**.
 
-MH-KPG-1004
+### One important correction to your current version
 
-BHU-SYNC can bring together:
+Instead of:
 
-Source Coverage
-├── Cadastral
-├── Municipal
-├── Registry
-├── Property Tax
-└── GIS
+```text
+📊 Project Status
+A — Data Platform ✅
+...
+H — SIH Demo + Security ✅
 
-Harmonization
-├── Match status
-├── Score
-└── Contributing factors
+I'd use:
 
-Conflicts
-├── Owner
-├── Area
-└── Spatial
+## 📊 Project Status
 
-Temporal
-├── Previous state
-├── Current state
-└── Detected changes
+| Phase | Capability | Status |
+|---|---|---|
+| A | Data Platform Foundation | ✅ Verified |
+| B | Authentication + Government Roles | ✅ Verified |
+| C | Multi-Source Harmonization | ✅ Verified |
+| D | Advanced GIS + Spatial Intelligence | ✅ Verified |
+| E | AI Copilot 2.0 | ✅ Verified |
+| F | Temporal / Change Intelligence | ✅ Verified |
+| G | Workflow + Audit | ✅ Verified |
+| H | SIH Demo + Security | ✅ Verified |
 
-Workflow
-├── Case
-├── Reviewer
-├── Evidence
-└── Decision
-
-Audit
-└── Activity history
-
-This creates a single parcel-centric intelligence view.
-
-🔐 Security Principles
-
-The platform is designed around:
-
-Authentication
-Role-based authorization
-Organization isolation
-Row Level Security
-Backend permission enforcement
-Input validation
-Secure file processing
-Protected audit records
-AI tool restrictions
-Backend-only private credentials
-No arbitrary SQL through Copilot
-No arbitrary code execution through Copilot
-
-Private credentials such as service-role keys and database passwords must never be exposed through the frontend.
-
-🧪 Testing & Verification
-
-The current project verification covers the complete Phase A–H roadmap.
-
-Reported automated verification:
-
-Phase	Capability	Tests
-Phase A	Data Platform	9
-Phase B	Authentication & RBAC	11
-Phase C	Multi-Source Harmonization	25
-Phase D	Advanced GIS	30
-Phase E	AI Copilot 2.0	25
-Phase F	Temporal Intelligence	34
-Phase G	Workflow & Audit	36
-Phase H	Security & SIH Demo	37
-Total	Complete roadmap	207
-Reported Results
-207 / 207 automated tests passed
-
-Backend compilation:
-PASS
-
-Frontend production build:
-PASS
-
-Authentication:
-VERIFIED
-
-RLS:
-VERIFIED
-
-GIS:
-VERIFIED
-
-AI Copilot:
-VERIFIED
-
-Temporal Intelligence:
-VERIFIED
-
-Workflow:
-VERIFIED
-
-Audit:
-VERIFIED
-
-SIH Demo:
-VERIFIED
-
-See:
-
-FULL_BHU_SYNC_VERIFICATION_REPORT.md
-
-for the project's detailed verification results.
-
-📊 Project Phases
-Phase A ✅ Data Platform Foundation
-
-Phase B ✅ Authentication + Government Roles
-
-Phase C ✅ Multi-Source Harmonization
-
-Phase D ✅ Advanced GIS + Spatial Intelligence
-
-Phase E ✅ AI Copilot 2.0
-
-Phase F ✅ Temporal / Change Intelligence
-
-Phase G ✅ Workflow + Audit
-
-Phase H ✅ SIH Demo + Security
-🎬 Recommended SIH Demonstration
-
-A compact demonstration flow:
-
-1. Login
-      ↓
-2. Dashboard
-      ↓
-3. Data Hub
-      ↓
-4. Multi-Source Dataset
-      ↓
-5. Harmonization
-      ↓
-6. Conflict Detection
-      ↓
-7. Open Parcel in GIS
-      ↓
-8. Compare Sources
-      ↓
-9. Ask AI Copilot
-      ↓
-10. View Temporal History
-      ↓
-11. Create Review Case
-      ↓
-12. Add Evidence
-      ↓
-13. Resolve Case
-      ↓
-14. View Audit Trail
-
-This demonstrates how the platform connects its major capabilities into a single workflow.
-
-📁 Repository Structure
-BHU-SYNC/
-│
-├── backend/
-│   ├── main.py
-│   ├── routers/
-│   ├── services/
-│   ├── migrations/
-│   ├── data/
-│   └── test_*.py
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── i18n/
-│   │   └── ...
-│   ├── public/
-│   └── package.json
-│
-├── demo_data/
-│
-├── PHASE_A_IMPLEMENTATION_REPORT.md
-├── PHASE_B_IMPLEMENTATION_REPORT.md
-├── PHASE_C_IMPLEMENTATION_REPORT.md
-├── PHASE_D_IMPLEMENTATION_REPORT.md
-├── PHASE_E_IMPLEMENTATION_REPORT.md
-├── PHASE_F_IMPLEMENTATION_REPORT.md
-├── PHASE_G_IMPLEMENTATION_REPORT.md
-├── PHASE_H_IMPLEMENTATION_REPORT.md
-├── FULL_BHU_SYNC_VERIFICATION_REPORT.md
-├── SIH_DEMO_WALKTHROUGH.md
-└── README.md
-⚙️ Local Setup
-Backend
-
-From the project root:
-
-cd backend
-python -m uvicorn main:app --reload
-
-Backend:
-
-http://127.0.0.1:8000
-Frontend
-
-Open another terminal:
-
-cd frontend
-npm run dev
-
-Frontend:
-
-http://localhost:5173
-🔑 Environment Variables
-
-The frontend uses Vite environment variables.
-
-Example:
-
-VITE_SUPABASE_URL=https://YOUR_PROJECT_ID.supabase.co
-VITE_SUPABASE_ANON_KEY=YOUR_PUBLIC_ANON_KEY
-
-Never commit:
-
-.env
-.env.local
-database passwords
-service-role keys
-private AI API keys
-private access tokens
-
-Use .env.example for placeholders.
-
-🗃️ Database Architecture
-
-Core data concepts include:
-
-datasets
-dataset_versions
-source_records
-canonical_parcels
-parcel_source_links
-analysis_runs
-analysis_changes
-conflicts
-harmonized_records
-
-profiles
-organizations
-roles
-permissions
-
-workflow_cases
-workflow_case_comments
-workflow_case_evidence
-workflow_case_events
-
-audit_logs
-
-The spatial layer uses PostgreSQL/PostGIS where enabled.
-
-🧠 Design Principles
-Preserve Source Truth
-
-Original source values remain traceable.
-
-Explainability
-
-Matching and conflict results expose supporting evidence.
-
-Non-Destructive Analysis
-
-Previous analysis runs are preserved.
-
-Parcel-Centric Intelligence
-
-Multiple source records can be associated with one canonical parcel.
-
-Human-in-the-Loop
-
-System findings support human review rather than replacing authorized decisions.
-
-Security by Design
-
-Authentication, authorization, RLS and organization boundaries are considered throughout the architecture.
-
-Spatial Intelligence
-
-GIS is used for analytical comparison, not only visualization.
-
-⚠️ Domain & Prototype Limitations
-
-BHU-SYNC is a prototype/intelligence platform.
-
-It does not independently determine:
-
-Legal ownership
-Legal title
-Legally binding boundaries
-Court decisions
-Government approval
-Final legal status of a parcel
-
-The platform identifies data discrepancies and provides evidence for authorized human review.
-
-Demo datasets are synthetic and are not official government land records.
-
-Deployment-specific security, infrastructure, data governance, and operational validation are required before use with real government production data.
-
-📚 Project Documentation
-
-Additional documentation is available in the repository:
-
-Phase implementation reports
-Full A–H verification report
-SIH demo walkthrough
-Database migration documentation
-Local setup documentation
-
-Start with:
-
-FULL_BHU_SYNC_VERIFICATION_REPORT.md
-
-and:
-
-SIH_DEMO_WALKTHROUGH.md
-
-🎥 Prototype Demonstration
-
-YouTube Demo:
-
-Add the final prototype demonstration link here.
-
-https://youtube.com/YOUR_VIDEO_LINK
-🔗 GitHub Repository
-
-Repository:
-
-https://github.com/sahils-44/BHU-SYNC-AI-Powered-Urban-Land-Record-Harmonization-Intelligence-Platform
-
-🏆 Smart India Hackathon
-Team TechX Titan
-
-Project:
-
-BHU-SYNC — AI-Powered Urban Land Record Harmonization & Intelligence Platform
-
-BHU-SYNC combines:
-
-Data Engineering
-+
-Multi-Source Harmonization
-+
-GIS
-+
-Artificial Intelligence
-+
-Temporal Intelligence
-+
-Human Review
-+
-Auditability
-+
-Security
-
-into a unified parcel-centric intelligence platform.
-
-👥 Team
-TechX Titan
-
-Smart India Hackathon Prototype Team
-
-Project: BHU-SYNC
-
-One Plot. One Truth. Multiple Sources, Intelligently Synced.
-
-📜 Project Status
-A — Data Platform              ✅
-B — Authentication + RBAC      ✅
-C — Harmonization              ✅
-D — Advanced GIS               ✅
-E — AI Copilot 2.0             ✅
-F — Temporal Intelligence      ✅
-G — Workflow + Audit           ✅
-H — SIH Demo + Security        ✅
-
-The implementation is presented as a prototype for demonstration and evaluation.
-
-<p align="center">
-BHU-SYNC
-
-One Plot. One Truth. Multiple Sources, Intelligently Synced.
-
-Developed by Team TechX Titan
+> **Prototype note:** BHU-SYNC is intended for demonstration and evaluation. Real government deployment would require environment-specific infrastructure, security, data-governance, and operational validation.
