@@ -1061,13 +1061,13 @@ For demonstration flow, see:
 Add the final prototype demonstration URL below:
 
 ```text
-YOUR_YOUTUBE_VIDEO_LINK
+YOUTUBE_VIDEO_LINK
 ```
 
 Example:
 
 ```markdown
-[▶️ Watch BHU-SYNC Prototype Demo](YOUR_YOUTUBE_VIDEO_LINK)
+[▶️ Watch BHU-SYNC Prototype Demo](https://youtu.be/rpeMOIMkdyo)
 ```
 
 ---
