@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-1001",
+        "owner_name": "Ramesh Kumar",
+        "area": 2450,
+        "score": 96,
+        "status": "Harmonized"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4756, 19.8828],
+            [74.4765, 19.8828],
+            [74.4765, 19.8837],
+            [74.4756, 19.8837],
+            [74.4756, 19.8828]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-1002",
+        "owner_name": "Suresh Patil",
+        "area": 1800,
+        "score": 78,
+        "status": "Review Required"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4767, 19.8830],
+            [74.4776, 19.8830],
+            [74.4776, 19.8839],
+            [74.4767, 19.8839],
+            [74.4767, 19.8830]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-1003",
+        "owner_name": "Anita Sharma",
+        "area": 3200,
+        "score": 100,
+        "status": "Harmonized"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4778, 19.8843],
+            [74.4788, 19.8843],
+            [74.4788, 19.8852],
+            [74.4778, 19.8852],
+            [74.4778, 19.8843]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-1004",
+        "owner_name": "Rajesh More",
+        "area": 1250,
+        "score": 58,
+        "status": "Conflict Detected"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4789, 19.8852],
+            [74.4798, 19.8852],
+            [74.4798, 19.8861],
+            [74.4789, 19.8861],
+            [74.4789, 19.8852]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-1005",
+        "owner_name": "Neha Joshi",
+        "area": 0,
+        "score": 30,
+        "status": "Missing Source"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.4799, 19.8862],
+            [74.4808, 19.8862],
+            [74.4808, 19.8871],
+            [74.4799, 19.8871],
+            [74.4799, 19.8862]
+          ]
+        ]
+      }
+    }
+  ]
+}

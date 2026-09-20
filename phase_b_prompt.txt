@@ -1,0 +1,777 @@
+<USER_REQUEST>
+You are working on the BHU-SYNC project.
+
+PROJECT:
+BHU-SYNC — AI-Powered Urban Land Record Harmonization & Intelligence Platform
+
+CURRENT STATUS:
+Phase A — Data Platform Foundation is COMPLETE and VERIFIED.
+
+Phase A currently provides:
+- Persistent source_records
+- dataset_versions
+- datasets
+- canonical_parcels
+- parcel_source_links
+- analysis_runs
+- analysis_changes
+- conflicts
+- harmonized_records
+- Database-driven harmonization
+- Non-destructive analysis history
+- Real source comparison
+- Dashboard telemetry
+- Cadastral + Municipal ingestion
+- Live Supabase PostgreSQL backend
+
+Phase A verification:
+- All 9 Phase A automated tests PASSED
+- python -m compileall backend PASSED
+- npm run build PASSED
+- Live Supabase database verified
+
+MASTER ROADMAP:
+CURRENT BHU-SYNC 1.0
+↓
+PHASE A — DATA PLATFORM
+↓
+PHASE B — AUTH + GOVERNMENT ROLES
+↓
+PHASE C — MULTI-SOURCE HARMONIZATION
+↓
+PHASE D — ADVANCED GIS
+↓
+PHASE E — AI COPILOT 2.0
+↓
+PHASE F — TEMPORAL / CHANGE INTELLIGENCE
+↓
+PHASE G — WORKFLOW + AUDIT
+↓
+PHASE H — SIH DEMO + SECURITY
+
+==================================================
+YOUR TASK
+==================================================
+
+Implement ONLY:
+
+PHASE B — AUTHENTICATION + GOVERNMENT ROLES
+
+Do NOT implement Phase C, D, E, F, G, or H features.
+
+The purpose of Phase B is to convert BHU-SYNC from an open application into an authenticated government-oriented platform with role-based access control while preserving all Phase A functionality.
+
+==================================================
+1. FIRST INSPECT THE CURRENT PROJECT
+==================================================
+
+Before editing anything:
+
+1. Inspect:
+   - backend/main.py
+   - backend/supabase_client.py
+   - backend/routers/*
+   - frontend/src/App.tsx
+   - frontend/src/*
+   - existing Supabase configuration
+   - current database schema/migrations
+   - PHASE_A_IMPLEMENTATION_REPORT.md
+   - backend/test_phase_a_pipeline.py
+
+2. Understand the current Phase A implementation.
+
+3. Do NOT recreate or replace the Phase A architecture.
+
+4. Reuse the existing Supabase integration.
+
+5. Do not introduce a second authentication system.
+
+==================================================
+2. SUPABASE AUTHENTICATION
+==================================================
+
+Implement authentication using Supabase Auth.
+
+Use Supabase Auth as the single source of truth for user identity.
+
+Required functionality:
+
+- Sign in
+- Sign out
+- Current authenticated session
+- Session persistence across page refresh
+- Authenticated-user retrieval
+- Protected application access
+- Login error handling
+- Loading state while checking session
+
+Use the existing Supabase project.
+
+Do NOT hardcode credentials.
+
+Do NOT commit secrets.
+
+Do NOT print:
+- SUPABASE_SERVICE_ROLE_KEY
+- passwords
+- JWT secrets
+- API keys
+- access tokens
+
+Frontend should use the normal Supabase client/public configuration.
+
+Backend must verify authenticated identity securely rather than trusting a user-supplied user ID.
+
+==================================================
+3. USER PROFILE MODEL
+==================================================
+
+Create the minimum database structure required for authenticated application users.
+
+Implement:
+
+profiles
+
+Required conceptual fields:
+
+- id → references Supabase Auth user UUID
+- full_name
+- email
+- organization_id
+- role_id
+- department
+- is_active
+- created_at
+- updated_at
+
+Do not duplicate the Supabase Auth password system.
+
+Profile records must be associated with auth.users.
+
+Use UUIDs.
+
+==================================================
+4. ORGANIZATION / GOVERNMENT DEPARTMENT MODEL
+==================================================
+
+Implement a minimal organization model representing a government department or administrative unit.
+
+Create:
+
+organizations
+
+Minimum useful fields:
+
+- id
+- name
+- code
+- organization_type
+- is_active
+- created_at
+- updated_at
+
+Examples may include:
+
+- Municipal Department
+- Revenue Department
+- Survey Department
+- Land Records Department
+
+Do not hardcode these as application logic.
+
+They should be stored as database records.
+
+==================================================
+5. ROLE-BASED ACCESS CONTROL
+==================================================
+
+Create a real RBAC foundation.
+
+Implement:
+
+roles
+permissions
+
+and the appropriate relationship between users, roles, organizations and permissions.
+
+Use a database-driven design rather than scattered hardcoded role checks.
+
+Initial roles:
+
+1. PLATFORM_ADMIN
+   - Platform-level administration
+   - Full access
+
+2. DEPARTMENT_ADMIN
+   - Manage users/members within their organization
+   - Access department data
+   - Run analysis
+   - Upload datasets
+
+3. OFFICER
+   - View department data
+   - Upload permitted datasets
+   - Run analysis/harmonization
+   - Review conflicts
+   - View source comparison
+   - View reports/data
+
+4. VIEWER
+   - Read-only access
+   - Dashboard
+   - GIS
+   - Conflicts
+   - Harmonization
+   - Source comparison
+   - No upload
+   - No analysis execution
+   - No administrative actions
+
+Keep the role model extensible.
+
+Do not hardcode permission logic throughout App.tsx.
+
+==================================================
+6. PERMISSION MODEL
+==================================================
+
+Create permissions for the current application capabilities.
+
+Examples:
+
+- dashboard.view
+- datasets.view
+- datasets.upload
+- analysis.view
+- analysis.run
+- conflicts.view
+- conflicts.update
+- harmonization.view
+- harmonization.run
+- gis.view
+- source_comparison.view
+- users.view
+- users.manage
+- organization.manage
+- roles.manage
+
+Create a clear mapping between roles and permissions.
+
+Do not implement future Phase G workflow approval/sign-off functionality.
+
+==================================================
+7. DATABASE SECURITY / RLS
+==================================================
+
+Implement Row Level Security where appropriate.
+
+Important principles:
+
+- Users must only access records they are authorized to access.
+- Department users must not automatically see another department's private organizational data.
+- VIEWER must not gain write capability through frontend manipulation.
+- Backend authorization must not rely only on hidden frontend buttons.
+- Server-side authorization must be enforced.
+
+Use organization_id relationships consistently.
+
+Do not weaken existing Phase A data integrity.
+
+Do NOT remove existing RLS policies just to make development easier.
+
+Do NOT use unrestricted database access from the frontend.
+
+==================================================
+8. BACKEND AUTHORIZATION
+==================================================
+
+Add a reusable backend authentication/authorization layer.
+
+Create a clean dependency/helper mechanism for:
+
+- authenticated user
+- current profile
+- current organization
+- current role
+- permission checking
+
+The routers should be able to express authorization such as:
+
+require_permission("datasets.upload")
+require_permission("analysis.run")
+require_permission("users.manage")
+
+Do not copy-paste authorization code into every endpoint.
+
+Protect existing endpoints according to their purpose.
+
+Suggested access pattern:
+
+PUBLIC:
+- GET /
+- GET /health
+
+AUTHENTICATED:
+- dashboard
+- conflicts
+- harmonization
+- GIS-related data
+- source comparison
+
+OFFICER / DEPARTMENT_ADMIN / PLATFORM_ADMIN:
+- dataset upload
+- run analysis
+- run harmonization
+
+DEPARTMENT_ADMIN / PLATFORM_ADMIN:
+- user management
+- organization management
+
+VIEWER:
+- read-only
+
+Make the final endpoint policy match the actual existing route names and capabilities after inspecting the project.
+
+==================================================
+9. FRONTEND AUTH FLOW
+==================================================
+
+Implement a proper login experience.
+
+Add a login page/view without introducing a large frontend rewrite.
+
+Required:
+
+- Email
+- Password
+- Sign In button
+- Loading state
+- Authentication error message
+- Session restoration
+- Sign out
+
+After successful authentication:
+→ enter the existing BHU-SYNC application.
+
+When unauthenticated:
+→ show the login screen instead of the protected application.
+
+Do not use React Router unless it is genuinely necessary.
+Preserve the current App.tsx architecture.
+
+Do NOT rewrite the 3000+ line App.tsx unnecessarily.
+
+Use small reusable components where practical.
+
+==================================================
+10. USER PROFILE / HEADER
+==================================================
+
+Add a minimal authenticated-user area to the existing application shell.
+
+Show:
+
+- User name or email
+- Role
+- Department / organization
+- Sign out action
+
+Do not redesign the entire UI.
+
+Do not perform unrelated presentation changes.
+
+==================================================
+11. ROLE-AWARE UI
+==================================================
+
+Existing controls must respect permissions.
+
+Examples:
+
+If user lacks:
+datasets.upload
+→ hide/disable upload action.
+
+If user lacks:
+analysis.run
+→ hide/disable Run Analysis / Run Harmonization.
+
+If user is VIEWER:
+→ application remains usable for read-only inspection.
+
+Important:
+Frontend visibility is NOT the security boundary.
+
+Backend authorization must independently enforce permissions.
+
+==================================================
+12. USER / ORGANIZATION MANAGEMENT
+==================================================
+
+Implement only a minimal Phase B administration area.
+
+Platform Admin:
+- View users
+- View roles
+- View organizations
+- Activate/deactivate users
+
+Department Admin:
+- View members of their own organization
+- View member roles
+- Activate/deactivate eligible department users
+
+Do NOT implement complex workflow approval.
+
+Do NOT implement government sign-off.
+
+Do NOT implement audit workflow from Phase G.
+
+Do NOT implement advanced invitation infrastructure unless it already exists and is trivial to integrate.
+
+A clean foundation is more important than a large admin system.
+
+==================================================
+13. TEST USER SETUP
+==================================================
+
+Provide a safe development/test setup.
+
+Create documentation describing how to create test users through Supabase Auth.
+
+Use example roles:
+
+- platform.admin@test.local
+- department.admin@test.local
+- officer@test.local
+- viewer@test.local
+
+Do NOT create or expose real passwords in source code.
+
+Do NOT hardcode test credentials.
+
+Document how an administrator can assign the corresponding role/profile after creating the users.
+
+==================================================
+14. PRESERVE PHASE A
+==================================================
+
+This is extremely important.
+
+Do NOT break:
+
+- source_records
+- dataset_versions
+- datasets
+- canonical_parcels
+- parcel_source_links
+- analysis_runs
+- analysis_changes
+- conflicts
+- harmonized_records
+- source ingestion
+- dataset versioning
+- database-driven analysis
+- non-destructive runs
+- source comparison
+- dashboard statistics
+
+Do not rewrite the harmonization engine.
+
+Do not change Phase A matching logic unless an authentication dependency absolutely requires a minimal compatibility adjustment.
+
+If a Phase A change is unavoidable:
+- make the smallest possible change
+- document it clearly
+- rerun all Phase A tests
+
+==================================================
+15. PHASE B DATABASE MIGRATION
+==================================================
+
+Create a dedicated migration/schema file for Phase B, for example:
+
+backend/migrations/phase_b_schema.sql
+
+It should contain only the Phase B database additions/changes.
+
+Include:
+
+- profiles
+- organizations
+- roles
+- permissions
+- role-permission mapping
+- organization/user relationship
+- required foreign keys
+- indexes
+- timestamps
+- RLS policies
+- safe constraints
+
+Do NOT drop existing Phase A tables.
+
+Do NOT truncate existing data.
+
+Do NOT reset the Supabase project.
+
+Do NOT destroy existing development records.
+
+Migration must be additive and safe.
+
+==================================================
+16. AUDIT / OWNERSHIP FIELDS
+==================================================
+
+Where appropriate, add authenticated ownership metadata to newly introduced Phase B records.
+
+For example:
+
+created_by
+updated_by
+
+Do not redesign all existing Phase A tables just for this phase.
+
+Keep changes minimal.
+
+Full audit trail belongs to a later roadmap phase.
+
+==================================================
+17. FRONTEND SECURITY
+==================================================
+
+Do NOT store:
+
+- passwords
+- service-role keys
+- private secrets
+
+in localStorage.
+
+Use the official Supabase session mechanism.
+
+Do not trust a role stored only in localStorage.
+
+When permission-sensitive UI is loaded:
+→ derive identity/role from the authenticated session/profile data.
+
+==================================================
+18. ERROR HANDLING
+==================================================
+
+Handle cases such as:
+
+- invalid credentials
+- expired session
+- deleted profile
+- inactive user
+- missing role
+- missing organization
+- unauthorized endpoint request
+- insufficient permission
+- Supabase/network failure
+
+Display user-friendly messages.
+
+Do not expose raw database errors or secret configuration.
+
+==================================================
+19. TESTING
+==================================================
+
+Create a Phase B verification suite.
+
+Suggested:
+
+backend/test_phase_b_auth.py
+
+Tests should verify at minimum:
+
+1. unauthenticated access is rejected for protected routes
+2. valid authenticated user is accepted
+3. invalid/expired auth is rejected
+4. VIEWER cannot upload
+5. VIEWER cannot run analysis
+6. OFFICER can perform permitted operational actions
+7. DEPARTMENT_ADMIN can manage eligible department users
+8. users cannot access another organization's protected administration data
+9. inactive users cannot perform protected operations
+10. role/permission lookup works correctly
+11. existing Phase A pipeline remains functional
+
+Do not rely only on manually clicking the UI.
+
+==================================================
+20. BUILD VERIFICATION
+==================================================
+
+Run:
+
+python -m compileall backend
+
+npm run build
+
+Run the entire Phase A verification suite again.
+
+Run the Phase B verification suite.
+
+Fix real errors.
+
+Do not hide failures.
+
+==================================================
+21. DOCUMENTATION
+==================================================
+
+Create:
+
+PHASE_B_IMPLEMENTATION_REPORT.md
+
+Include:
+
+1. Objective
+2. Authentication architecture
+3. Database tables added
+4. Role model
+5. Permission model
+6. Organization model
+7. RLS/security model
+8. Protected backend endpoints
+9. Frontend authentication flow
+10. Role-aware UI
+11. Test-user setup instructions
+12. Phase A compatibility verification
+13. Phase B test results
+14. Build results
+15. Known limitations
+16. Explicit confirmation of what was NOT implemented
+
+Also create/update:
+
+walkthrough.md
+
+Only with relevant Phase B information.
+
+==================================================
+22. STRICT SCOPE CONTROL
+==================================================
+
+THIS IS PHASE B ONLY.
+
+Do NOT implement:
+
+- advanced multi-source matching
+- advanced conflict intelligence
+- PostGIS migration
+- advanced GIS
+- satellite analysis
+- AI Copilot 2.0
+- RAG
+- vector database
+- temporal intelligence
+- historical comparison engine
+- workflow approval/sign-off
+- evidence/document intelligence
+- advanced audit trail
+- SIH demo mode
+- production deployment
+- Kubernetes
+- Redis
+- microservices
+- large frontend refactor
+
+Those belong to later phases.
+
+==================================================
+23. CODE QUALITY
+==================================================
+
+Use the project's existing architecture and conventions.
+
+Prefer:
+- small reusable backend dependencies
+- clear permission checks
+- typed frontend data
+- reusable authentication state
+- minimal changes to existing screens
+
+Avoid:
+- giant rewrites
+- duplicate auth systems
+- unnecessary libraries
+- unnecessary dependency additions
+- hardcoded role logic everywhere
+- destructive migrations
+
+==================================================
+24. FINAL VALIDATION CHECKLIST
+==================================================
+
+Before declaring Phase B complete, verify:
+
+[ ] Supabase Auth integrated
+[ ] Login works
+[ ] Logout works
+[ ] Session survives refresh
+[ ] Profile table works
+[ ] Organizations table works
+[ ] Roles table works
+[ ] Permissions table works
+[ ] Role-permission mapping works
+[ ] RLS policies work
+[ ] Backend protected routes work
+[ ] Viewer restrictions work
+[ ] Officer permissions work
+[ ] Department Admin permissions work
+[ ] Platform Admin permissions work
+[ ] Inactive users are blocked
+[ ] Cross-organization access is blocked
+[ ] Phase A tests still pass
+[ ] Phase B tests pass
+[ ] Python compile passes
+[ ] Frontend build passes
+[ ] Documentation generated
+
+==================================================
+25. FINAL OUTPUT
+==================================================
+
+At the end, provide:
+
+PHASE B STATUS:
+- COMPLETE / BLOCKED
+
+Files created:
+- exact list
+
+Files modified:
+- exact list
+
+Database changes:
+- exact list
+
+Tests:
+- Phase A result
+- Phase B result
+
+Build:
+- backend result
+- frontend result
+
+Known issues:
+- exact list
+
+SCOPE CHECK:
+Explicitly confirm that no Phase C+ functionality was implemented.
+
+IMPORTANT:
+Do not commit.
+Do not push.
+Do not reset git.
+Do not delete existing project data.
+Do not modify unrelated files.
+Do not claim completion unless the tests and builds actually pass.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-19T08:37:23+05:30.
+</ADDITIONAL_METADATA>

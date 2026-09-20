@@ -1,0 +1,1535 @@
+<USER_REQUEST>
+You are working on the BHU-SYNC project.
+
+PROJECT:
+BHU-SYNC — AI-Powered Urban Land Record Harmonization & Intelligence Platform
+
+TAGLINE:
+“One Plot. One Truth. Multiple Sources, Intelligently Synced.”
+
+==================================================
+CURRENT PROJECT STATUS
+==================================================
+
+PHASE A — DATA PLATFORM FOUNDATION:
+COMPLETE
+
+Phase A established:
+
+- persistent datasets
+- dataset_versions
+- source_records
+- canonical_parcels
+- parcel_source_links
+- analysis_runs
+- analysis_changes
+- conflicts
+- harmonized_records
+- database-driven ingestion
+- database-driven analysis
+- non-destructive analysis runs
+- real source comparison
+- dashboard telemetry
+- Cadastral + Municipal ingestion
+- version-controlled datasets
+
+Phase A was verified with:
+- 9/9 automated tests passed
+- backend compilation passed
+- frontend build passed
+
+PHASE B — AUTHENTICATION + GOVERNMENT ROLES:
+ASSUMED COMPLETE
+
+Phase B should provide:
+
+- Supabase Auth
+- profiles
+- organizations
+- roles
+- permissions
+- role-permission mapping
+- organization-aware access
+- RLS
+- protected backend endpoints
+- role-aware frontend
+- authenticated government users
+
+Before making changes, inspect the actual Phase B implementation and verify what exists.
+
+IMPORTANT:
+Do not assume a feature exists just because the Phase B report says it does.
+Inspect the actual source code and database schema first.
+
+==================================================
+MASTER ROADMAP
+==================================================
+
+CURRENT BHU-SYNC 1.0
+↓
+PHASE A — DATA PLATFORM
+↓
+PHASE B — AUTH + GOVERNMENT ROLES
+↓
+PHASE C — MULTI-SOURCE HARMONIZATION
+↓
+PHASE D — ADVANCED GIS
+↓
+PHASE E — AI COPILOT 2.0
+↓
+PHASE F — TEMPORAL / CHANGE INTELLIGENCE
+↓
+PHASE G — WORKFLOW + AUDIT
+↓
+PHASE H — SIH DEMO + SECURITY
+
+==================================================
+YOUR TASK
+==================================================
+
+Implement ONLY:
+
+PHASE C — MULTI-SOURCE HARMONIZATION
+
+The objective is to evolve BHU-SYNC from primarily Cadastral-vs-Municipal reconciliation into a true multi-source land-record harmonization platform.
+
+The system must be able to ingest, normalize, identify, compare, reconcile, and explain records originating from multiple government/land information sources while preserving source provenance.
+
+==================================================
+STRICT PHASE C SCOPE
+==================================================
+
+PHASE C INCLUDES:
+
+- multi-source dataset support
+- source-specific ingestion
+- source schema normalization
+- record normalization
+- parcel identity resolution
+- multi-source matching
+- canonical parcel consolidation
+- source-to-canonical linking
+- cross-source comparison
+- multi-source conflict detection
+- harmonization scoring
+- confidence calculation
+- explainable matching reasons
+- missing-source detection
+- source coverage analysis
+- source consistency analysis
+- multi-source dashboard telemetry
+- multi-source harmonization UI
+- tests for all above
+
+PHASE C DOES NOT INCLUDE:
+
+- advanced GIS
+- PostGIS implementation
+- spatial geometry engine redesign
+- advanced satellite analysis
+- computer vision
+- AI Copilot 2.0
+- RAG
+- vector database
+- LLM integration
+- temporal intelligence
+- historical version comparison engine
+- workflow approval
+- government sign-off
+- advanced audit trail
+- SIH demo mode
+- production deployment
+- Kubernetes
+- Redis
+- microservices
+- large frontend refactor
+
+Do not implement Phase D+ functionality.
+
+==================================================
+1. INSPECT THE EXISTING ARCHITECTURE FIRST
+==================================================
+
+Before editing:
+
+Inspect:
+
+backend/main.py
+backend/supabase_client.py
+backend/routers/
+backend/services/
+backend/migrations/
+backend/test_phase_a_pipeline.py
+Phase B authentication/authorization files
+PHASE_A_IMPLEMENTATION_REPORT.md
+PHASE_B_IMPLEMENTATION_REPORT.md
+frontend/src/App.tsx
+frontend/src/components/
+frontend/src/i18n/
+backend/data/
+any existing normalization/matching/conflict code
+
+Understand:
+
+- current database tables
+- current source_records structure
+- current canonical_parcels structure
+- current parcel_source_links structure
+- current matching engine
+- current conflict engine
+- current harmonization service
+- current confidence logic
+- current authentication/permission model
+
+Do not replace working Phase A or Phase B architecture.
+
+==================================================
+2. EXPAND THE SOURCE-TYPE MODEL
+==================================================
+
+BHU-SYNC must support a multi-source architecture.
+
+The initial supported source categories should be:
+
+1. CADASTRAL
+2. MUNICIPAL
+3. REGISTRY
+4. PROPERTY_TAX
+5. SURVEY
+6. GIS
+7. MUTATION
+8. BUILDING_FOOTPRINT
+9. ZONING
+10. SATELLITE
+
+Use a stable internal enum/string convention.
+
+Do not create separate duplicated database tables for every source unless the current architecture absolutely requires it.
+
+Prefer:
+
+source_type + normalized source_records
+
+while preserving raw source data in raw_data.
+
+Each source must retain:
+
+- source type
+- dataset
+- dataset version
+- source record ID
+- raw data
+- normalized fields
+- ingestion metadata
+
+==================================================
+3. SOURCE-SPECIFIC FIELD NORMALIZATION
+==================================================
+
+Build a robust normalization layer.
+
+Different datasets may use different column names.
+
+Examples:
+
+parcel_id:
+- parcel_id
+- property_id
+- plot_id
+- survey_no
+- survey_number
+- khasra_no
+- khasra_number
+- property_no
+
+owner:
+- owner
+- owner_name
+- property_owner
+- holder_name
+- registered_owner
+- applicant_name
+
+area:
+- area
+- area_sqm
+- plot_area
+- land_area
+- parcel_area
+
+latitude:
+- latitude
+- lat
+- y
+
+longitude:
+- longitude
+- lon
+- lng
+- x
+
+address:
+- address
+- property_address
+- location
+- site_address
+
+Do NOT simply discard unknown columns.
+
+Preserve original data in raw_data.
+
+Create a normalized internal representation for fields required by matching.
+
+==================================================
+4. NORMALIZED SOURCE RECORD MODEL
+==================================================
+
+Define a consistent internal structure for matching.
+
+At minimum support normalized fields such as:
+
+- source_record_id
+- source_type
+- dataset_id
+- dataset_version_id
+- parcel_identifier
+- normalized_parcel_identifier
+- owner_name
+- normalized_owner_name
+- area
+- latitude
+- longitude
+- address
+- normalized_address
+- administrative identifiers
+- raw_data
+
+Do not destroy original values.
+
+Example:
+
+Original:
+"Ramesh C. Patel"
+
+Normalized:
+"ramesh c patel"
+
+Original:
+"MH-KPG-00104"
+
+Normalized identifier:
+"mhkpg00104"
+
+Normalization must be deterministic.
+
+==================================================
+5. IDENTITY RESOLUTION ENGINE
+==================================================
+
+Upgrade the current matching architecture into a multi-level parcel identity engine.
+
+Matching should be evaluated in a controlled sequence.
+
+LEVEL 1:
+Exact parcel identifier match
+
+LEVEL 2:
+Normalized parcel identifier match
+
+LEVEL 3:
+Strong source-specific identifier match
+
+LEVEL 4:
+Owner similarity
+
+LEVEL 5:
+Area similarity
+
+LEVEL 6:
+Coordinate proximity when coordinates are available
+
+LEVEL 7:
+Address similarity when appropriate
+
+Create a transparent matching result.
+
+Every match should explain WHY the records were matched.
+
+Example:
+
+MATCHED
+- normalized parcel ID exact
+- owner similarity 0.94
+- area difference 2.1 sqm
+
+or:
+
+POTENTIAL MATCH
+- owner similarity 0.88
+- area similarity 0.97
+- identifier unavailable
+
+or:
+
+UNMATCHED
+- no reliable common identifier
+- owner similarity below threshold
+
+IMPORTANT:
+
+Do NOT implement advanced geospatial processing here.
+
+Simple coordinate-distance comparison is acceptable where already supported.
+
+Advanced spatial matching belongs to PHASE D.
+
+==================================================
+6. MATCHING SCORE
+==================================================
+
+Create a deterministic multi-factor matching score.
+
+The score must be explainable.
+
+Possible factors:
+
+- identifier match
+- normalized identifier match
+- owner similarity
+- area similarity
+- coordinate proximity
+- address similarity
+
+Use a configurable weighting mechanism.
+
+Do not scatter magic numbers across the code.
+
+Centralize thresholds and weights.
+
+Example configuration concept:
+
+IDENTIFIER_WEIGHT
+OWNER_WEIGHT
+AREA_WEIGHT
+COORDINATE_WEIGHT
+ADDRESS_WEIGHT
+
+MATCH_THRESHOLD
+REVIEW_THRESHOLD
+
+Use sensible defaults based on the existing application logic.
+
+Do not rewrite functioning Phase A logic without reason.
+
+==================================================
+7. MATCH STATUS
+==================================================
+
+Every source-to-source/canonical relationship should be classified into states such as:
+
+- MATCHED
+- POTENTIAL_MATCH
+- UNMATCHED
+- CONFLICT
+
+Keep the distinction clear:
+
+MATCHED:
+Strong evidence that records refer to the same parcel.
+
+POTENTIAL_MATCH:
+Evidence exists but requires review.
+
+UNMATCHED:
+No sufficiently reliable correspondence found.
+
+CONFLICT:
+Records likely refer to the same parcel but contain meaningful disagreement.
+
+Do not confuse "unmatched" with "conflict".
+
+==================================================
+8. CANONICAL PARCEL CONSOLIDATION
+==================================================
+
+Use the existing canonical_parcels model from Phase A.
+
+Do not create another competing parcel identity system.
+
+A canonical parcel should represent the unified physical parcel identity.
+
+Multiple source records should link to the same canonical parcel through:
+
+parcel_source_links
+
+The system must support:
+
+Canonical Parcel
+    ↓
+Cadastral record
+Municipal record
+Registry record
+Property Tax record
+Survey record
+GIS record
+Mutation record
+Building Footprint record
+Zoning record
+Satellite record
+
+Not every parcel needs every source.
+
+==================================================
+9. SOURCE COVERAGE MATRIX
+==================================================
+
+For each canonical parcel, determine which sources are available.
+
+Example:
+
+Parcel MH-KPG-1001
+
+Cadastral       ✓
+Municipal       ✓
+Registry        ✓
+Property Tax    ✓
+Survey          ✓
+GIS             ✓
+Mutation        ✗
+Building        ✓
+Zoning          ✓
+Satellite       ✓
+
+This information should be queryable through the backend.
+
+Expose source coverage through an endpoint.
+
+Example conceptual endpoint:
+
+GET /analysis/source-coverage/{parcel_id}
+
+Use the actual project routing conventions after inspection.
+
+==================================================
+10. MULTI-SOURCE RECONCILIATION
+==================================================
+
+The harmonization engine must no longer assume only:
+
+Cadastral vs Municipal
+
+Instead, compare all available source records belonging to the same canonical parcel.
+
+For example:
+
+Cadastral:
+owner = Ramesh Patel
+area = 1250
+
+Municipal:
+owner = Ramesh C Patel
+area = 1248
+
+Registry:
+owner = Ramesh Chandra Patel
+area = 1251
+
+Property Tax:
+owner = Ramesh Patel
+area = 1250
+
+The engine should determine:
+
+- likely common identity
+- owner consistency
+- area consistency
+- source coverage
+- conflicts
+- confidence
+- harmonization status
+
+==================================================
+11. OWNER NORMALIZATION
+==================================================
+
+Implement deterministic owner-name normalization.
+
+Handle examples such as:
+
+"Ramesh Patel"
+"RAMESH PATEL"
+"Ramesh C. Patel"
+"Ramesh C Patel"
+
+Do not claim legal identity equivalence.
+
+The system should describe these as:
+
+"name similarity"
+
+or
+
+"likely same normalized owner name"
+
+not as a legal ownership determination.
+
+Preserve original owner names.
+
+==================================================
+12. AREA RECONCILIATION
+==================================================
+
+Implement configurable area comparison.
+
+For matching:
+
+- exact area
+- small tolerance
+- moderate difference
+- major difference
+
+The tolerance should be configurable.
+
+The system should calculate:
+
+- source area
+- canonical/reference area where applicable
+- absolute difference
+- percentage difference
+- severity
+
+Do not silently replace one source's area with another.
+
+Source values must remain traceable.
+
+==================================================
+13. CONFLICT ENGINE
+==================================================
+
+Extend the conflict engine to multi-source conflicts.
+
+Supported conflict categories should include:
+
+OWNER_MISMATCH
+AREA_MISMATCH
+IDENTIFIER_MISMATCH
+LOCATION_MISMATCH
+MISSING_SOURCE
+DUPLICATE_RECORD
+POTENTIAL_IDENTITY_CONFLICT
+
+Use the existing conflict table architecture where possible.
+
+Every conflict must retain:
+
+- canonical parcel
+- source record(s)
+- source type(s)
+- analysis_run_id
+- conflict type
+- severity
+- description
+- relevant values
+- created_at
+
+Do not implement workflow resolution/approval.
+
+Conflict resolution workflow belongs to Phase G.
+
+==================================================
+14. MISSING-SOURCE INTELLIGENCE
+==================================================
+
+A parcel can be validly present in some sources and absent from others.
+
+Detect:
+
+- present in Cadastral but absent in Municipal
+- present in Municipal but absent in Registry
+- present in Registry but absent in Property Tax
+- etc.
+
+Treat missing source coverage separately from a data disagreement.
+
+Example:
+
+Parcel exists:
+Cadastral ✓
+Municipal ✓
+Registry ✗
+
+Result:
+
+MISSING_SOURCE
+
+not:
+
+OWNER_MISMATCH
+
+==================================================
+15. DUPLICATE DETECTION
+==================================================
+
+Detect duplicate source records inside a dataset.
+
+Examples:
+
+same parcel ID repeated
+same normalized identifier repeated
+same owner + area + location repeated
+
+Do not blindly delete duplicates.
+
+Flag them as duplicate/conflict records.
+
+Preserve original source records.
+
+==================================================
+16. HARMONIZATION STATUS
+==================================================
+
+A canonical parcel should receive a harmonization status based on multi-source evidence.
+
+Suggested states:
+
+HARMONIZED
+REVIEW_REQUIRED
+UNMATCHED
+INSUFFICIENT_DATA
+
+Use the project's existing status names where already established.
+
+Do not silently change the meaning of existing statuses.
+
+The status must be reproducible from deterministic rules.
+
+==================================================
+17. HARMONIZATION SCORE
+==================================================
+
+Create/update a multi-source harmonization score.
+
+The score should consider factors such as:
+
+- identity confidence
+- owner consistency
+- area consistency
+- source coverage
+- unresolved conflicts
+- duplicate indicators
+
+The exact weighting must be centralized and explainable.
+
+The system should expose:
+
+- score
+- status
+- contributing factors
+- conflict count
+- source count
+
+Example:
+
+Score: 87.5
+
+Status: HARMONIZED
+
+Sources: 7/9
+
+Conflicts: 1
+
+Explanation:
+- Strong parcel identifier agreement
+- High owner-name similarity
+- Area variance below configured threshold
+- One missing source
+- One low-severity mismatch
+
+Do not use an opaque AI-generated score.
+
+==================================================
+18. SOURCE RELIABILITY
+==================================================
+
+Do NOT invent legal authority rankings.
+
+The system may report descriptive source statistics such as:
+
+- completeness
+- consistency
+- match rate
+- conflict rate
+- missing value rate
+
+Do not claim:
+
+"Registry is legally more authoritative than Municipal"
+
+unless explicitly provided by the application configuration/source.
+
+Use neutral terminology such as:
+
+source consistency
+source completeness
+source coverage
+
+==================================================
+19. MULTI-SOURCE DASHBOARD API
+==================================================
+
+Upgrade dashboard telemetry to support the expanded source architecture.
+
+Dashboard should be able to provide:
+
+- total canonical parcels
+- harmonized parcels
+- review-required parcels
+- unmatched parcels
+- total conflicts
+- high-priority conflicts
+- average harmonization score
+- source coverage
+- source match rates
+- source consistency
+- latest analysis
+- latest dataset versions
+
+Do not hardcode metrics.
+
+All values must come from the database.
+
+==================================================
+20. SOURCE COMPARISON API
+==================================================
+
+Keep the existing:
+
+GET /analysis/source-comparison/{parcel_id}
+
+but extend it so it can return more than two sources.
+
+Example response concept:
+
+{
+  "parcel_id": "...",
+  "sources": [
+    {
+      "source_type": "CADASTRAL",
+      "owner_name": "...",
+      "area": 1250,
+      "record_id": "..."
+    },
+    {
+      "source_type": "MUNICIPAL",
+      "owner_name": "...",
+      "area": 1248,
+      "record_id": "..."
+    },
+    {
+      "source_type": "REGISTRY",
+      "owner_name": "...",
+      "area": 1251,
+      "record_id": "..."
+    }
+  ],
+  "comparison": {
+    "owner_consistency": ...,
+    "area_consistency": ...,
+    "conflicts": ...
+  }
+}
+
+Use the actual schema and response conventions of the project.
+
+==================================================
+21. MULTI-SOURCE FRONTEND
+==================================================
+
+Update only the UI required for Phase C.
+
+Do NOT redesign the entire frontend.
+
+The Data Hub should allow the user to identify the source type for an uploaded dataset.
+
+Support:
+
+Cadastral
+Municipal
+Registry
+Property Tax
+Survey
+GIS
+Mutation
+Building Footprint
+Zoning
+Satellite
+
+Use the existing authenticated permission system from Phase B.
+
+Users without datasets.upload must not be allowed to upload.
+
+==================================================
+22. HARMONIZATION SCREEN
+==================================================
+
+Upgrade the existing Harmonization tab to display real multi-source results.
+
+Include useful information such as:
+
+- canonical parcel ID
+- harmonization score
+- status
+- source count
+- matched source count
+- conflict count
+- owner consistency
+- area consistency
+
+Keep the current BHU-SYNC visual language.
+
+Do not perform a huge App.tsx rewrite.
+
+==================================================
+23. PARCEL DETAIL / SOURCE BREAKDOWN
+==================================================
+
+Where the current UI already supports parcel details, extend it minimally to show:
+
+Canonical Parcel
+
+Source Coverage
+Cadastral
+Municipal
+Registry
+Property Tax
+Survey
+GIS
+Mutation
+Building Footprint
+Zoning
+Satellite
+
+For each available source:
+
+- original identifier
+- normalized identifier
+- owner
+- area
+- coordinates where available
+- match status
+
+Do not show data that does not exist.
+
+==================================================
+24. CONFLICT UI
+==================================================
+
+Extend the existing Conflicts tab to support the new multi-source conflict types.
+
+Filters should support:
+
+- source type
+- conflict type
+- severity
+- status where already supported
+- search
+
+Do not implement conflict approval/resolution workflow.
+
+That belongs to Phase G.
+
+==================================================
+25. INGESTION VALIDATION
+==================================================
+
+Improve the ingestion pipeline to validate each supported source type.
+
+Validation should include:
+
+- required identifier availability
+- supported column mapping
+- numeric area validation
+- coordinate parsing when present
+- owner parsing
+- duplicate indicators
+- missing-value statistics
+
+Bad rows should not cause the complete upload to fail unnecessarily when the existing ingestion architecture supports partial processing.
+
+However:
+
+Never silently discard invalid rows.
+
+Record rejection/quality information in a traceable way.
+
+==================================================
+26. DATA QUALITY INFORMATION
+==================================================
+
+For every dataset version, calculate descriptive quality metrics such as:
+
+- total rows
+- valid rows
+- invalid rows
+- duplicate rows
+- missing parcel IDs
+- missing owner values
+- missing area values
+- missing coordinates
+- parse errors
+
+Keep this inside the Phase C data-quality scope.
+
+Do not build the advanced Data Quality Intelligence dashboard planned for a later phase unless it is required for the basic metrics above.
+
+==================================================
+27. ANALYSIS RUNS
+==================================================
+
+Continue using the Phase A non-destructive analysis_runs model.
+
+Every Phase C harmonization execution must:
+
+- create an analysis_run
+- preserve prior runs
+- tag resulting conflicts
+- tag harmonized results
+- maintain source/dataset version lineage
+
+Never wipe the previous run's results.
+
+==================================================
+28. CHANGE DETECTION COMPATIBILITY
+==================================================
+
+Preserve the Phase A analysis_changes system.
+
+Where possible, extend change detection to multi-source changes.
+
+Examples:
+
+NEW_SOURCE_MATCH
+SOURCE_MATCH_LOST
+OWNER_CHANGED
+AREA_CHANGED
+CONFLICT_CREATED
+CONFLICT_RESOLVED
+SCORE_CHANGED
+SOURCE_ADDED
+SOURCE_REMOVED
+
+Use existing analysis_changes conventions.
+
+Do not build full temporal intelligence.
+
+Phase F will handle advanced historical intelligence.
+
+==================================================
+29. AUTHORIZATION COMPATIBILITY
+==================================================
+
+Use Phase B authentication and permissions.
+
+Do not create a second authorization mechanism.
+
+Relevant permission examples:
+
+datasets.view
+datasets.upload
+analysis.view
+analysis.run
+harmonization.view
+harmonization.run
+conflicts.view
+
+Use the actual permission implementation already present.
+
+Server-side authorization is mandatory.
+
+==================================================
+30. DATABASE MIGRATION
+==================================================
+
+Create a dedicated migration:
+
+backend/migrations/phase_c_schema.sql
+
+Only add/modify schema required by Phase C.
+
+Possible additions include:
+
+- source-type metadata
+- normalized fields
+- matching configuration
+- match results
+- source coverage metadata
+- harmonization details
+- quality metrics
+
+Reuse existing tables when they already support the requirement.
+
+Do NOT create duplicate versions of:
+
+datasets
+dataset_versions
+source_records
+canonical_parcels
+parcel_source_links
+analysis_runs
+conflicts
+harmonized_records
+
+Do NOT:
+
+- DROP existing Phase A tables
+- TRUNCATE existing data
+- reset Supabase
+- recreate the entire database
+- delete existing project data
+
+Migration must be additive and safe.
+
+==================================================
+31. CONFIGURATION
+==================================================
+
+Centralize Phase C matching and harmonization configuration.
+
+For example:
+
+- identifier match threshold
+- owner similarity threshold
+- area tolerance
+- coordinate tolerance
+- address similarity threshold
+- harmonization threshold
+- review threshold
+- conflict severity thresholds
+
+Do not scatter thresholds throughout multiple files.
+
+Make the rules deterministic.
+
+==================================================
+32. TEST DATA
+==================================================
+
+Extend the development test dataset to demonstrate multi-source harmonization.
+
+Maintain the existing Cadastral and Municipal data.
+
+Add small synthetic examples for:
+
+REGISTRY
+PROPERTY_TAX
+SURVEY
+MUTATION
+
+At minimum demonstrate:
+
+1. Strong multi-source match
+2. Owner-name variation
+3. Small area difference
+4. Major area conflict
+5. Missing source
+6. Duplicate source record
+7. Potential match
+8. Unmatched parcel
+
+Use synthetic development data only.
+
+Do not claim it is real government data.
+
+==================================================
+33. TEST SUITE
+==================================================
+
+Create:
+
+backend/test_phase_c_harmonization.py
+
+Minimum test coverage:
+
+TEST 1:
+Source-type registration works.
+
+TEST 2:
+Cadastral ingestion works.
+
+TEST 3:
+Municipal ingestion works.
+
+TEST 4:
+Registry ingestion works.
+
+TEST 5:
+Property Tax ingestion works.
+
+TEST 6:
+Source field normalization works.
+
+TEST 7:
+Owner normalization works.
+
+TEST 8:
+Parcel identifier normalization works.
+
+TEST 9:
+Exact identifier matching works.
+
+TEST 10:
+Normalized identifier matching works.
+
+TEST 11:
+Owner similarity matching works.
+
+TEST 12:
+Area comparison works.
+
+TEST 13:
+Potential match classification works.
+
+TEST 14:
+Unmatched record classification works.
+
+TEST 15:
+Canonical parcel consolidates multi-source records correctly.
+
+TEST 16:
+parcel_source_links preserve provenance.
+
+TEST 17:
+Missing-source detection works.
+
+TEST 18:
+Duplicate detection works.
+
+TEST 19:
+Owner conflict detection works.
+
+TEST 20:
+Area conflict detection works.
+
+TEST 21:
+Multi-source harmonization score is deterministic.
+
+TEST 22:
+Source comparison returns all available source records.
+
+TEST 23:
+Dashboard metrics are database-driven.
+
+TEST 24:
+Previous Phase A run data remains intact.
+
+TEST 25:
+Authorization prevents users without required permissions from modifying datasets/analysis.
+
+Do not fake test results.
+
+==================================================
+34. REGRESSION TESTING
+==================================================
+
+After Phase C changes, rerun the existing Phase A test suite.
+
+Also run the Phase B authentication/authorization tests if they exist.
+
+Required:
+
+Phase A:
+PASS
+
+Phase B:
+PASS
+
+Phase C:
+PASS
+
+If a Phase A or Phase B test fails because of a Phase C change:
+
+- investigate the actual cause
+- fix compatibility
+- do not delete or weaken the earlier test
+- document the change
+
+==================================================
+35. BUILD VALIDATION
+==================================================
+
+Run:
+
+python -m compileall backend
+
+npm run build
+
+Run all available Phase A/B/C tests.
+
+Fix actual errors.
+
+Do not suppress failures.
+
+==================================================
+36. DOCUMENTATION
+==================================================
+
+Create:
+
+PHASE_C_IMPLEMENTATION_REPORT.md
+
+Include:
+
+1. Objective
+2. Multi-source architecture
+3. Supported source types
+4. Source normalization
+5. Identity resolution
+6. Matching levels
+7. Matching score
+8. Canonical parcel consolidation
+9. Source coverage
+10. Conflict engine
+11. Harmonization scoring
+12. Dashboard changes
+13. Frontend changes
+14. Database migration
+15. Authentication compatibility
+16. Synthetic test dataset
+17. Phase C test results
+18. Phase A regression result
+19. Phase B regression result
+20. Build results
+21. Known limitations
+22. Explicit scope boundaries
+
+Also update:
+
+walkthrough.md
+
+with only relevant Phase C information.
+
+==================================================
+37. IMPORTANT DATA-PROVENANCE RULE
+==================================================
+
+BHU-SYNC must NEVER silently overwrite source truth.
+
+For every harmonized parcel:
+
+Original source values must remain available.
+
+Example:
+
+Cadastral:
+owner = "Ramesh Patel"
+
+Municipal:
+owner = "Ramesh C. Patel"
+
+Registry:
+owner = "Ramesh Chandra Patel"
+
+The harmonization engine may conclude:
+
+"High owner-name similarity"
+
+but must not replace all three original values with one fabricated value.
+
+Canonical information must remain traceable to its source records.
+
+==================================================
+38. IMPORTANT LEGAL/DOMAIN RULE
+==================================================
+
+BHU-SYNC is an intelligence and harmonization platform.
+
+It must NOT claim that its automated process legally determines:
+
+- ownership
+- title
+- legal boundary
+- government authority
+- legal validity of a record
+
+Use wording such as:
+
+- matched
+- likely match
+- discrepancy detected
+- source disagreement
+- confidence
+- harmonization status
+
+Do not introduce legal determinations.
+
+==================================================
+39. PERFORMANCE
+==================================================
+
+Keep the implementation practical for the existing project.
+
+Use database queries efficiently.
+
+Avoid:
+
+- N+1 queries where practical
+- loading all source rows repeatedly into memory
+- unnecessary frontend API calls
+- duplicate matching passes
+
+The implementation must still work for the current development dataset and be structured so larger datasets can be handled later.
+
+Do NOT introduce Redis, Celery, Kafka, microservices, or other infrastructure.
+
+==================================================
+40. FRONTEND ARCHITECTURE SAFETY
+==================================================
+
+The current App.tsx is large.
+
+Do NOT rewrite it from scratch.
+
+Do NOT migrate the application to a new routing architecture.
+
+Do NOT replace the existing design system.
+
+Make only the smallest frontend changes necessary for Phase C.
+
+Reuse existing components where possible.
+
+==================================================
+41. NO FAKE DATA
+==================================================
+
+This is critical.
+
+After Phase C:
+
+Do not use hardcoded:
+
+- parcel counts
+- conflict counts
+- harmonization counts
+- source coverage
+- source comparison values
+- score values
+- dashboard charts
+
+unless they are clearly static UI examples outside the live data path.
+
+All live dashboard/harmonization/conflict information must come from the backend/database.
+
+==================================================
+42. FINAL VALIDATION CHECKLIST
+==================================================
+
+Before declaring Phase C complete:
+
+[ ] Phase A functionality preserved
+[ ] Phase B authentication preserved
+[ ] Phase B authorization preserved
+[ ] Multi-source source types supported
+[ ] Source normalization implemented
+[ ] Raw data preserved
+[ ] Canonical parcels reused
+[ ] Source links preserved
+[ ] Multi-level matching implemented
+[ ] Matching explanations implemented
+[ ] Owner similarity implemented
+[ ] Area comparison implemented
+[ ] Missing-source detection implemented
+[ ] Duplicate detection implemented
+[ ] Multi-source conflict detection implemented
+[ ] Harmonization scoring implemented
+[ ] Source coverage implemented
+[ ] Source comparison upgraded
+[ ] Dashboard telemetry upgraded
+[ ] Harmonization UI upgraded
+[ ] Conflict UI upgraded
+[ ] No hardcoded live metrics
+[ ] No destructive database changes
+[ ] Phase A tests pass
+[ ] Phase B tests pass
+[ ] Phase C tests pass
+[ ] Backend compilation passes
+[ ] Frontend build passes
+[ ] PHASE_C_IMPLEMENTATION_REPORT.md created
+[ ] walkthrough.md updated
+
+==================================================
+43. STRICT SCOPE CHECK
+==================================================
+
+Before finishing, explicitly verify that you DID NOT implement:
+
+- Advanced GIS / Phase D
+- PostGIS migration
+- advanced geospatial intelligence
+- satellite computer vision
+- AI Copilot 2.0
+- RAG
+- vector database
+- LLM orchestration
+- temporal intelligence
+- historical intelligence
+- workflow/sign-off
+- advanced audit trail
+- SIH demo mode
+- production deployment
+
+These must remain for later phases.
+
+==================================================
+44. FINAL OUTPUT
+==================================================
+
+At the end provide:
+
+PHASE C STATUS:
+COMPLETE / BLOCKED
+
+FILES CREATED:
+- exact file list
+
+FILES MODIFIED:
+- exact file list
+
+DATABASE CHANGES:
+- exact list
+
+NEW SOURCE TYPES:
+- exact list
+
+MATCHING ENGINE:
+- exact description
+
+CONFLICT ENGINE:
+- exact description
+
+TEST RESULTS:
+- Phase A
+- Phase B
+- Phase C
+
+BUILD RESULTS:
+- backend
+- frontend
+
+KNOWN ISSUES:
+- exact list
+
+SCOPE CHECK:
+Explicitly confirm that only Phase C was implemented.
+
+IMPORTANT:
+Do not commit.
+Do not push.
+Do not reset git.
+Do not delete existing data.
+Do not wipe Supabase.
+Do not modify unrelated features.
+Do not claim completion unless the actual tests and builds pass.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-19T08:44:43+05:30.
+</ADDITIONAL_METADATA>

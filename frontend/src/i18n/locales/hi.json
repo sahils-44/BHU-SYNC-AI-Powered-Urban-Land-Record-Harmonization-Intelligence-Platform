@@ -1,0 +1,137 @@
+{
+  "navigation": {
+    "dashboard": "डैशबोर्ड",
+    "dataHub": "डेटा हब",
+    "harmonization": "सामंजस्य",
+    "conflicts": "विवाद",
+    "gisMap": "GIS मानचित्र",
+    "aiCopilot": "AI सहायक",
+    "reports": "रिपोर्ट",
+    "settings": "सेटिंग्स"
+  },
+
+  "language": {
+    "title": "भाषा",
+    "description": "एप्लिकेशन की भाषा चुनें",
+    "english": "अंग्रेज़ी",
+    "hindi": "हिन्दी",
+    "marathi": "मराठी"
+  },
+
+  "common": {
+    "search": "प्लॉट खोजें...",
+    "refresh": "रिफ्रेश",
+    "open": "खोलें",
+    "viewAll": "सभी देखें",
+    "loading": "डेटा लोड हो रहा है...",
+    "noData": "कोई रिकॉर्ड नहीं मिला",
+    "live": "लाइव",
+    "all": "सभी",
+    "searchPages": "पेज खोजें...",
+    "close": "बंद करें",
+    "view": "देखें",
+    "back": "वापस",
+    "next": "अगला",
+    "previous": "पिछला",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "submit": "सबमिट करें",
+    "apply": "लागू करें",
+    "clear": "साफ़ करें",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "unknown": "अज्ञात",
+    "total": "कुल",
+    "status": "स्थिति",
+    "details": "विवरण",
+    "actions": "क्रियाएँ",
+    "date": "तारीख",
+    "time": "समय",
+    "name": "नाम",
+    "source": "स्रोत",
+    "records": "रिकॉर्ड",
+    "error": "त्रुटि",
+    "success": "सफलता"
+  },
+
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "subtitle": "शहरी भूमि रिकॉर्ड सामंजस्य का अवलोकन",
+    "totalParcels": "कुल प्लॉट",
+    "harmonized": "सामंजस्यित",
+    "reviewRequired": "समीक्षा आवश्यक",
+    "averageScore": "औसत स्कोर",
+    "harmonizationStatus": "सामंजस्य स्थिति",
+    "scoreDistribution": "सामंजस्य स्कोर वितरण",
+    "sourceQuality": "स्रोत गुणवत्ता",
+    "spatialOverview": "स्थानिक अवलोकन",
+    "parcelHarmonizationStatus": "प्लॉट सामंजस्य स्थिति",
+    "openGisMap": "GIS मानचित्र खोलें",
+    "interactiveGisMap": "इंटरैक्टिव GIS मानचित्र",
+    "mapLibreIntegration": "MapLibre स्थानिक दृश्य",
+    "harmonizedRate": "सामंजस्य दर",
+    "reviewRate": "समीक्षा दर",
+    "activeConflicts": "सक्रिय विवाद",
+    "highConfidence": "उच्च विश्वास",
+    "mediumConfidence": "मध्यम विश्वास",
+    "lowConfidence": "कम विश्वास"
+  },
+
+  "dataHub": {
+    "title": "डेटा हब",
+    "subtitle": "भूमि रिकॉर्ड डेटासेट प्रबंधित और निरीक्षण करें",
+    "uploadDataset": "डेटासेट अपलोड करें",
+    "datasets": "डेटासेट",
+    "dataset": "डेटासेट",
+    "source": "स्रोत",
+    "records": "रिकॉर्ड",
+    "status": "स्थिति",
+    "uploaded": "अपलोड किया गया",
+    "processed": "प्रोसेस किया गया",
+    "pending": "लंबित",
+    "failed": "विफल",
+    "uploadTitle": "डेटासेट अपलोड करें",
+    "uploadDescription": "सामंजस्य के लिए भूमि रिकॉर्ड डेटासेट अपलोड करें",
+    "chooseFile": "फ़ाइल चुनें",
+    "supportedFormats": "समर्थित प्रारूप: CSV, XLSX, JSON",
+    "upload": "अपलोड",
+    "cancel": "रद्द करें",
+    "searchDatasets": "डेटासेट खोजें...",
+    "noDatasets": "कोई डेटासेट नहीं मिला",
+    "loadingDatasets": "डेटासेट लोड हो रहे हैं...",
+    "cadastral": "कैडस्ट्रल",
+    "municipal": "नगरपालिका",
+    "registry": "रजिस्ट्री",
+    "gis": "GIS"
+  },
+  "harmonization": {
+    "title": "सामंजस्य", "subtitle": "कई स्रोतों के भूमि रिकॉर्ड की तुलना और सामंजस्य करें", "harmonizationScore": "सामंजस्य स्कोर", "score": "स्कोर", "sources": "स्रोत", "sourceCount": "स्रोत संख्या", "conflicts": "विवाद", "conflictCount": "विवाद संख्या", "parcelId": "प्लॉट ID", "owner": "मालिक", "ownerName": "मालिक का नाम", "area": "क्षेत्रफल", "ward": "वार्ड", "latitude": "अक्षांश", "longitude": "देशांतर", "highConfidence": "उच्च विश्वास", "mediumConfidence": "मध्यम विश्वास", "lowConfidence": "कम विश्वास", "harmonized": "सामंजस्यित", "reviewRequired": "समीक्षा आवश्यक", "conflict": "विवाद", "searchParcels": "प्लॉट खोजें...", "filterStatus": "स्थिति के अनुसार फ़िल्टर", "allParcels": "सभी प्लॉट", "noRecords": "कोई सामंजस्य रिकॉर्ड नहीं मिला", "loading": "सामंजस्य डेटा लोड हो रहा है..."
+  },
+  "conflicts": {
+    "title": "विवाद", "subtitle": "भूमि रिकॉर्ड स्रोतों के बीच पाई गई असंगतियों की समीक्षा करें", "activeConflicts": "सक्रिय विवाद", "totalConflicts": "कुल विवाद", "parcel": "प्लॉट", "conflictType": "विवाद प्रकार", "severity": "गंभीरता", "valueA": "मान A", "valueB": "मान B", "description": "विवरण", "ownerConflict": "मालिक विवाद", "areaConflict": "क्षेत्रफल विवाद", "spatialConflict": "स्थानिक विवाद", "locationConflict": "स्थान विवाद", "duplicateConflict": "डुप्लिकेट रिकॉर्ड", "high": "उच्च", "medium": "मध्यम", "low": "कम", "review": "समीक्षा", "resolve": "समाधान करें", "resolved": "समाधान किया गया", "unresolved": "असमाधित", "searchConflicts": "विवाद खोजें...", "filterSeverity": "गंभीरता के अनुसार फ़िल्टर", "filterStatus": "स्थिति के अनुसार फ़िल्टर", "noConflicts": "कोई विवाद नहीं मिला"
+  },
+  "gis": {
+    "title": "GIS मानचित्र", "subtitle": "सामंजस्यित भूमि रिकॉर्ड का स्थानिक दृश्य", "map": "मानचित्र", "layers": "लेयर्स", "basemap": "बेसमैप", "parcels": "प्लॉट", "boundaries": "सीमाएँ", "sources": "स्रोत", "selectParcel": "प्लॉट चुनें", "parcelDetails": "प्लॉट विवरण", "showSources": "स्रोत दिखाएँ", "hideSources": "स्रोत छिपाएँ", "zoomIn": "ज़ूम इन", "zoomOut": "ज़ूम आउट", "resetView": "दृश्य रीसेट करें", "harmonized": "सामंजस्यित", "reviewRequired": "समीक्षा आवश्यक", "conflict": "विवाद", "spatialDistance": "स्थानिक दूरी", "boundaryDifference": "सीमा अंतर", "locationMatch": "स्थान मिलान", "plotTruth": "प्लॉट ट्रुथ", "sourceComparison": "स्रोत तुलना"
+  },
+  "plotTruth": {
+    "title": "प्लॉट ट्रुथ इंजन", "subtitle": "व्याख्यायोग्य प्लॉट-स्तरीय सामंजस्य मूल्यांकन", "parcelId": "प्लॉट ID", "harmonizationScore": "सामंजस्य स्कोर", "overallAssessment": "समग्र मूल्यांकन", "sourcesFound": "मिले हुए स्रोत", "matchingSources": "मिलान करने वाले स्रोत", "conflictsDetected": "पाए गए विवाद", "ownerInformation": "मालिक की जानकारी", "areaInformation": "क्षेत्रफल की जानकारी", "spatialInformation": "स्थानिक जानकारी", "sourceInformation": "स्रोत जानकारी", "ownerValues": "मालिक के मान", "areaValues": "क्षेत्रफल के मान", "boundaryValues": "सीमा के मान", "locationValues": "स्थान के मान", "whyFlagged": "इस प्लॉट को फ़्लैग क्यों किया गया?", "likelyCauses": "संभावित कारण", "recommendedAction": "अनुशंसित कार्रवाई", "verificationRequired": "सत्यापन आवश्यक", "viewOnMap": "GIS मानचित्र पर देखें", "compareSources": "स्रोतों की तुलना करें", "highConfidence": "उच्च विश्वास", "mediumConfidence": "मध्यम विश्वास", "lowConfidence": "कम विश्वास"
+  },
+  "sourceComparison": {
+    "title": "स्रोत तुलना", "subtitle": "विभिन्न डेटा स्रोतों द्वारा दी गई जानकारी की तुलना करें", "source": "स्रोत", "owner": "मालिक", "area": "क्षेत्रफल", "ward": "वार्ड", "latitude": "अक्षांश", "longitude": "देशांतर", "cadastral": "कैडस्ट्रल", "municipal": "नगरपालिका", "registry": "रजिस्ट्री", "gis": "GIS", "match": "मिलान", "mismatch": "असंगति", "notAvailable": "उपलब्ध नहीं", "noSourceData": "कोई स्रोत तुलना डेटा उपलब्ध नहीं है"
+  },
+  "copilot": {
+    "title": "AI सहायक", "subtitle": "सामंजस्यित भूमि रिकॉर्ड के बारे में प्रश्न पूछें", "askQuestion": "कोई प्रश्न पूछें...", "send": "भेजें", "thinking": "विश्लेषण हो रहा है...", "answer": "उत्तर", "suggestedQuestions": "सुझाए गए प्रश्न", "whyFlagged": "इस प्लॉट को फ़्लैग क्यों किया गया?", "showConflicts": "इस प्लॉट के विवाद दिखाएँ", "compareSources": "प्लॉट स्रोतों की तुलना करें", "explainScore": "सामंजस्य स्कोर समझाएँ", "viewOnMap": "GIS मानचित्र पर देखें", "relatedParcel": "संबंधित प्लॉट", "groundedResponse": "उत्तर सामंजस्यित प्लॉट जानकारी पर आधारित है", "notLegalDecision": "AI कानूनी स्वामित्व संबंधी निर्णय नहीं लेता"
+  },
+  "reports": {
+    "title": "रिपोर्ट", "subtitle": "सामंजस्य और विवाद रिपोर्ट तैयार करें", "generateReport": "रिपोर्ट तैयार करें", "downloadReport": "रिपोर्ट डाउनलोड करें", "export": "एक्सपोर्ट", "reportSummary": "रिपोर्ट सारांश", "totalParcels": "कुल प्लॉट", "harmonizedParcels": "सामंजस्यित प्लॉट", "reviewRequired": "समीक्षा आवश्यक", "activeConflicts": "सक्रिय विवाद", "averageScore": "औसत स्कोर", "harmonizationRate": "सामंजस्य दर", "reviewRate": "समीक्षा दर", "harmonizationStatus": "सामंजस्य स्थिति", "scoreDistribution": "सामंजस्य स्कोर वितरण", "priorityParcels": "प्राथमिकता वाले प्लॉट", "pdf": "PDF", "excel": "Excel", "csv": "CSV", "noReportData": "कोई रिपोर्ट डेटा उपलब्ध नहीं है"
+  },
+  "notifications": {
+    "title": "सूचनाएँ", "new": "नई", "multipleConflicts": "कई विवाद पाए गए", "reviewRequired": "समीक्षा आवश्यक", "verificationRequired": "सत्यापन आवश्यक", "viewAllConflicts": "सभी विवाद देखें", "noNotifications": "कोई नई सूचना नहीं"
+  },
+  "account": {
+    "administrator": "BHU-SYNC प्रशासक", "systemAdministrator": "सिस्टम प्रशासक", "accountSettings": "खाता सेटिंग्स", "profile": "प्रोफ़ाइल", "signOut": "साइन आउट"
+  },
+  "settings": {
+    "title": "सेटिंग्स", "subtitle": "एप्लिकेशन प्राथमिकताएँ प्रबंधित करें", "general": "सामान्य", "language": "भाषा", "notifications": "सूचनाएँ", "appearance": "दिखावट", "security": "सुरक्षा", "saveChanges": "परिवर्तन सहेजें", "preferencesSaved": "प्राथमिकताएँ सफलतापूर्वक सहेजी गईं"
+  }
+}

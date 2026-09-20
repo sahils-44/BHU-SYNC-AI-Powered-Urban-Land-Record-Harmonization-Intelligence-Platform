@@ -1,0 +1,2555 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2001",
+        "owner_name": "Sunita Deshmukh",
+        "area": 4782,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473667,
+          19.881649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2002",
+        "owner_name": "Pooja Pawar",
+        "area": 3166,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474575,
+          19.881685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2003",
+        "owner_name": "Sanjay Pawar",
+        "area": 3706,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475146,
+          19.881469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2004",
+        "owner_name": "Yogesh Kulkarni",
+        "area": 2798,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475975,
+          19.881635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2005",
+        "owner_name": "Rajesh Pawar",
+        "area": 904,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476682,
+          19.881624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2006",
+        "owner_name": "Kavita Bhosale",
+        "area": 1182,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477562,
+          19.881695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2007",
+        "owner_name": "Mahesh Jadhav",
+        "area": 1912,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47834,
+          19.88163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2008",
+        "owner_name": "Sachin Nikam",
+        "area": 1812,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478931,
+          19.881662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2009",
+        "owner_name": "Vijay Nikam",
+        "area": 4170,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479673,
+          19.881655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2010",
+        "owner_name": "Swati Gaikwad",
+        "area": 4182,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480496,
+          19.881695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2011",
+        "owner_name": "Meena Kulkarni",
+        "area": 4223,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481196,
+          19.88161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2012",
+        "owner_name": "Rajesh Kadam",
+        "area": 3368,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481988,
+          19.881723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2013",
+        "owner_name": "Dinesh Kharat",
+        "area": 3046,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482722,
+          19.881591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2014",
+        "owner_name": "Ramesh Bhosale",
+        "area": 3414,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483529,
+          19.881668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2015",
+        "owner_name": "Kavita Kharat",
+        "area": 2456,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484284,
+          19.881658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2016",
+        "owner_name": "Seema Kadam",
+        "area": 3497,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473717,
+          19.882546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2017",
+        "owner_name": "Meena Wagh",
+        "area": 3988,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474435,
+          19.882334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2018",
+        "owner_name": "Ashok Jadhav",
+        "area": 3863,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47534,
+          19.882424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2019",
+        "owner_name": "Ganesh Thorat",
+        "area": 3274,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475933,
+          19.882366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2020",
+        "owner_name": "Amit Deshmukh",
+        "area": 1079,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476802,
+          19.882309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2021",
+        "owner_name": "Sunita Bhosale",
+        "area": 3713,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477543,
+          19.882434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2022",
+        "owner_name": "Sanjay Sable",
+        "area": 2298,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478269,
+          19.882322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2023",
+        "owner_name": "Priya More",
+        "area": 3787,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479017,
+          19.882384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2024",
+        "owner_name": "Dinesh Wagh",
+        "area": 2981,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479768,
+          19.882445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2025",
+        "owner_name": "Suresh Shinde",
+        "area": 4330,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480505,
+          19.882429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2026",
+        "owner_name": "Suresh Thorat",
+        "area": 2186,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481301,
+          19.882398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2027",
+        "owner_name": "Sunita Shinde",
+        "area": 4529,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481974,
+          19.882258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2028",
+        "owner_name": "Sanjay Nikam",
+        "area": 4185,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482699,
+          19.882337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2029",
+        "owner_name": "Yogesh More",
+        "area": 2157,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48362,
+          19.882353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2030",
+        "owner_name": "Dinesh Lokhande",
+        "area": 2756,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484327,
+          19.882306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2031",
+        "owner_name": "Ganesh Kharat",
+        "area": 2948,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473723,
+          19.88299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2032",
+        "owner_name": "Rahul Mali",
+        "area": 3886,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474547,
+          19.883138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2033",
+        "owner_name": "Rajesh Salunkhe",
+        "area": 3572,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475313,
+          19.883182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2034",
+        "owner_name": "Rekha Salunkhe",
+        "area": 4215,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475963,
+          19.883097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2035",
+        "owner_name": "Dinesh Nikam",
+        "area": 2310,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476735,
+          19.883194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2036",
+        "owner_name": "Yogesh Mali",
+        "area": 2843,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477409,
+          19.883023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2037",
+        "owner_name": "Anita Shinde",
+        "area": 2551,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47829,
+          19.883051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2038",
+        "owner_name": "Sanjay Wagh",
+        "area": 4442,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479055,
+          19.883136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2039",
+        "owner_name": "Ganesh Joshi",
+        "area": 2054,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479763,
+          19.883091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2040",
+        "owner_name": "Deepak Mali",
+        "area": 3169,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480475,
+          19.883175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2041",
+        "owner_name": "Amit Mali",
+        "area": 1324,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481197,
+          19.883162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2042",
+        "owner_name": "Ramesh Gaikwad",
+        "area": 4208,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481969,
+          19.883096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2043",
+        "owner_name": "Vishal Kadam",
+        "area": 2367,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482789,
+          19.883029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2044",
+        "owner_name": "Yogesh Salunkhe",
+        "area": 2195,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483501,
+          19.883087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2045",
+        "owner_name": "Priya Salunkhe",
+        "area": 3152,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484286,
+          19.883163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2046",
+        "owner_name": "Sanjay Gaikwad",
+        "area": 2820,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473742,
+          19.883928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2047",
+        "owner_name": "Mahesh Mali",
+        "area": 4199,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474494,
+          19.883841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2048",
+        "owner_name": "Deepak Nikam",
+        "area": 2949,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475134,
+          19.88374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2049",
+        "owner_name": "Swati More",
+        "area": 2892,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47592,
+          19.883769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2050",
+        "owner_name": "Sachin More",
+        "area": 1264,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476678,
+          19.883907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2051",
+        "owner_name": "Yogesh Shinde",
+        "area": 936,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477604,
+          19.883845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2052",
+        "owner_name": "Yogesh Chavan",
+        "area": 2424,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478309,
+          19.883846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2053",
+        "owner_name": "Yogesh Sable",
+        "area": 4792,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478984,
+          19.8838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2054",
+        "owner_name": "Sachin Salunkhe",
+        "area": 4473,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479723,
+          19.883799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2055",
+        "owner_name": "Suresh Jadhav",
+        "area": 3334,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480362,
+          19.883942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2056",
+        "owner_name": "Sachin Pawar",
+        "area": 3341,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481269,
+          19.88391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2057",
+        "owner_name": "Sanjay Kulkarni",
+        "area": 2396,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481884,
+          19.883827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2058",
+        "owner_name": "Nilesh Joshi",
+        "area": 1551,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482708,
+          19.883881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2059",
+        "owner_name": "Dinesh More",
+        "area": 883,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483502,
+          19.883894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2060",
+        "owner_name": "Ashok Nikam",
+        "area": 2188,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484231,
+          19.884003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2061",
+        "owner_name": "Seema Chavan",
+        "area": 2100,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473764,
+          19.884543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2062",
+        "owner_name": "Yogesh Pawar",
+        "area": 1606,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474609,
+          19.884643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2063",
+        "owner_name": "Deepak Thorat",
+        "area": 1873,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475279,
+          19.884692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2064",
+        "owner_name": "Ganesh Mali",
+        "area": 948,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475905,
+          19.884742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2065",
+        "owner_name": "Prakash Salunkhe",
+        "area": 3251,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476676,
+          19.884574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2066",
+        "owner_name": "Suresh Gaikwad",
+        "area": 4513,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47739,
+          19.884594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2067",
+        "owner_name": "Deepak Pawar",
+        "area": 3578,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478232,
+          19.884676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2068",
+        "owner_name": "Vijay Lokhande",
+        "area": 2620,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478919,
+          19.884507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2069",
+        "owner_name": "Amit Thorat",
+        "area": 2510,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479817,
+          19.88465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2070",
+        "owner_name": "Swati Lokhande",
+        "area": 2064,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480733,
+          19.884785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2071",
+        "owner_name": "Rahul More",
+        "area": 1412,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481171,
+          19.884658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2072",
+        "owner_name": "Neha Sable",
+        "area": 3213,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482021,
+          19.884454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2073",
+        "owner_name": "Manoj Wagh",
+        "area": 3087,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482717,
+          19.88456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2074",
+        "owner_name": "Deepak More",
+        "area": 878,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483489,
+          19.884576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2075",
+        "owner_name": "Ramesh Mali",
+        "area": 2491,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484263,
+          19.88471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2076",
+        "owner_name": "Amit Bhosale",
+        "area": 1948,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473667,
+          19.885362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2077",
+        "owner_name": "Seema Patil",
+        "area": 1522,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474461,
+          19.885241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2078",
+        "owner_name": "Ashok Gaikwad",
+        "area": 3626,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475391,
+          19.885371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2079",
+        "owner_name": "Yogesh Kharat",
+        "area": 2927,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476079,
+          19.885385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2080",
+        "owner_name": "Rajesh Jadhav",
+        "area": 3353,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476655,
+          19.885335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2081",
+        "owner_name": "Rekha Gaikwad",
+        "area": 3668,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477442,
+          19.885298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2082",
+        "owner_name": "Nilesh Chavan",
+        "area": 4728,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478184,
+          19.885545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2083",
+        "owner_name": "Amit Kulkarni",
+        "area": 4020,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478928,
+          19.885442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2084",
+        "owner_name": "Seema More",
+        "area": 3300,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479781,
+          19.88545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2085",
+        "owner_name": "Prakash Lokhande",
+        "area": 4322,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480497,
+          19.885362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2086",
+        "owner_name": "Anita Sable",
+        "area": 2736,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481286,
+          19.885323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2087",
+        "owner_name": "Vishal Jadhav",
+        "area": 4739,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481902,
+          19.885339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2088",
+        "owner_name": "Meena Kharat",
+        "area": 3857,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482764,
+          19.885273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2089",
+        "owner_name": "Anita More",
+        "area": 3420,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483513,
+          19.885501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2090",
+        "owner_name": "Deepak Bhosale",
+        "area": 4418,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484273,
+          19.885366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2091",
+        "owner_name": "Vishal Sable",
+        "area": 2884,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473768,
+          19.886229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2092",
+        "owner_name": "Manoj Patil",
+        "area": 3696,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474589,
+          19.886092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2093",
+        "owner_name": "Mahesh Deshmukh",
+        "area": 1974,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475373,
+          19.886159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2094",
+        "owner_name": "Rajesh More",
+        "area": 4654,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475902,
+          19.88614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2095",
+        "owner_name": "Swati Salunkhe",
+        "area": 3312,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476882,
+          19.886016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2096",
+        "owner_name": "Sachin Joshi",
+        "area": 3938,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477486,
+          19.886263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2097",
+        "owner_name": "Amit Nikam",
+        "area": 2669,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478367,
+          19.886094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2098",
+        "owner_name": "Nilesh Bhosale",
+        "area": 4273,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478928,
+          19.886036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2099",
+        "owner_name": "Priya Patil",
+        "area": 1143,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479718,
+          19.886176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2100",
+        "owner_name": "Amit Patil",
+        "area": 1300,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480487,
+          19.886125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2101",
+        "owner_name": "Ganesh Shinde",
+        "area": 2853,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481363,
+          19.886152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2102",
+        "owner_name": "Sachin Wagh",
+        "area": 3743,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482052,
+          19.886132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2103",
+        "owner_name": "Rekha Kharat",
+        "area": 4046,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482746,
+          19.885961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2104",
+        "owner_name": "Dinesh Deshmukh",
+        "area": 2588,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483402,
+          19.886058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2105",
+        "owner_name": "Nilesh Kharat",
+        "area": 3416,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484223,
+          19.886055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2106",
+        "owner_name": "Mahesh Shinde",
+        "area": 3034,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473644,
+          19.886948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2107",
+        "owner_name": "Vijay Kharat",
+        "area": 4648,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474461,
+          19.886877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2108",
+        "owner_name": "Rekha Nikam",
+        "area": 3433,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47533,
+          19.886849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2109",
+        "owner_name": "Deepak Salunkhe",
+        "area": 2496,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476107,
+          19.886918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2110",
+        "owner_name": "Swati Bhosale",
+        "area": 4680,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476694,
+          19.886863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2111",
+        "owner_name": "Sachin Kharat",
+        "area": 1273,
+        "ward": 9,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477519,
+          19.886857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2112",
+        "owner_name": "Rajesh Patil",
+        "area": 4739,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478163,
+          19.886889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2113",
+        "owner_name": "Rajesh Deshmukh",
+        "area": 1458,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479018,
+          19.886882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2114",
+        "owner_name": "Seema Thorat",
+        "area": 1988,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4799,
+          19.887076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2115",
+        "owner_name": "Seema Wagh",
+        "area": 4094,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480477,
+          19.886807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2116",
+        "owner_name": "Ashok Sable",
+        "area": 3748,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481203,
+          19.886758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2117",
+        "owner_name": "Rajesh Joshi",
+        "area": 4682,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482096,
+          19.8869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2118",
+        "owner_name": "Sachin Thorat",
+        "area": 3812,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482698,
+          19.886817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2119",
+        "owner_name": "Anita Joshi",
+        "area": 3366,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483487,
+          19.886703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2120",
+        "owner_name": "Amit Jadhav",
+        "area": 2218,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484208,
+          19.88679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2121",
+        "owner_name": "Ashok Thorat",
+        "area": 868,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473742,
+          19.887555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2122",
+        "owner_name": "Sanjay Lokhande",
+        "area": 1339,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474383,
+          19.887484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2123",
+        "owner_name": "Yogesh Wagh",
+        "area": 2026,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475147,
+          19.887795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2124",
+        "owner_name": "Sanjay Shinde",
+        "area": 1011,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476147,
+          19.887537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2125",
+        "owner_name": "Anita Wagh",
+        "area": 2857,
+        "ward": 7,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476656,
+          19.887857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2126",
+        "owner_name": "Mahesh Sable",
+        "area": 3920,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.477527,
+          19.887596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2127",
+        "owner_name": "Rajesh Thorat",
+        "area": 4654,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478171,
+          19.887763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2128",
+        "owner_name": "Rahul Joshi",
+        "area": 2784,
+        "ward": 5,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479062,
+          19.887605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2129",
+        "owner_name": "Prakash Shinde",
+        "area": 4306,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47972,
+          19.88766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2130",
+        "owner_name": "Meena Joshi",
+        "area": 4742,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48039,
+          19.887614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2131",
+        "owner_name": "Sunita Gaikwad",
+        "area": 4246,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481229,
+          19.887606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2132",
+        "owner_name": "Seema Salunkhe",
+        "area": 2686,
+        "ward": 10,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481956,
+          19.887644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2133",
+        "owner_name": "Neha Wagh",
+        "area": 2134,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482831,
+          19.887663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2134",
+        "owner_name": "Manoj Mali",
+        "area": 4712,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.483528,
+          19.887637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2135",
+        "owner_name": "Mahesh Nikam",
+        "area": 1805,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48425,
+          19.887629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2136",
+        "owner_name": "Seema Kulkarni",
+        "area": 2475,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.473775,
+          19.888317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2137",
+        "owner_name": "Seema Bhosale",
+        "area": 1142,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.474667,
+          19.888367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2138",
+        "owner_name": "Rajesh Nikam",
+        "area": 3985,
+        "ward": 2,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475281,
+          19.888501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2139",
+        "owner_name": "Ganesh More",
+        "area": 3416,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.475911,
+          19.888314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2140",
+        "owner_name": "Vishal Chavan",
+        "area": 1185,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.476771,
+          19.88847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2141",
+        "owner_name": "Priya Gaikwad",
+        "area": 1726,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47736,
+          19.888413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2142",
+        "owner_name": "Rekha More",
+        "area": 3044,
+        "ward": 11,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478286,
+          19.888449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2143",
+        "owner_name": "Dinesh Jadhav",
+        "area": 2984,
+        "ward": 12,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.478962,
+          19.888286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2144",
+        "owner_name": "Ashok Kulkarni",
+        "area": 4018,
+        "ward": 1,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.479754,
+          19.888396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2145",
+        "owner_name": "Suresh Chavan",
+        "area": 1901,
+        "ward": 8,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.480492,
+          19.888352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2146",
+        "owner_name": "Rahul Wagh",
+        "area": 4502,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481262,
+          19.888355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2147",
+        "owner_name": "Rekha Chavan",
+        "area": 2605,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.481795,
+          19.888493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2148",
+        "owner_name": "Ganesh Chavan",
+        "area": 4099,
+        "ward": 4,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.482764,
+          19.888356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2149",
+        "owner_name": "Swati Deshmukh",
+        "area": 1791,
+        "ward": 3,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48347,
+          19.888399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "MH-KPG-2150",
+        "owner_name": "Dinesh Mali",
+        "area": 996,
+        "ward": 6,
+        "source": "CADASTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.484276,
+          19.888234
+        ]
+      }
+    }
+  ]
+}
